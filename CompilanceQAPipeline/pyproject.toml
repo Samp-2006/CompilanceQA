@@ -1,0 +1,31 @@
+[project]
+name = "compilanceqapipeline"
+version = "0.1.0"
+description = "This is the project used for yt ads strike from 2 pdfs provided"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "azure-identity>=1.25.2",
+    "azure-monitor-opentelemetry",
+    "azure-search-documents",
+    "azure-storage-blob",
+    "firecrawl-py",
+    "langchain>=1.2.10",
+    "langchain-community",
+    "langchain-openai",
+    "langgraph",
+    "langsmith",
+    "opentelemetry-instrumentation-asyncio",
+    "opentelemetry-instrumentation-fastapi",
+    "pandas",
+    "psycopg2-binary",
+    "pydantic",
+    "pypdf",
+    "python-dotenv",
+    "redis",
+    "requests",
+    "sqlalchemy",
+    "streamlit",
+    "uvicorn",
+    "yt-dlp",
+]
