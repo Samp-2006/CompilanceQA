@@ -20,7 +20,7 @@ logger=logging.getLogger("brand-guardian")
 logging.basicConfig(level=logging.INFO)
 
 #NODE 1:INDEXER 
-#functio nresponsible from video to text 
+#function responsible from video to text 
 def index_video_indexer(state:VideoAuditState)->Dict[str,Any]:
     '''
     This node is responsible for indexing the video content into Azure Search. It takes the video metadata, transcript, and OCR text as input and creates a searchable index in Azure Search. The function updates the state with the index information and any errors encountered during the indexing process.
