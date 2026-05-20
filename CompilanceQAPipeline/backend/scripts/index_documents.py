@@ -37,7 +37,7 @@ def index_docs():
     logger.info(f"AZURE_SEARCH_INDEX_NAME :{os.getenv('AZURE_SEARCH_INDEX_NAME')}")
     logger.info("="*60)
 
-    #valodate the required enviornments 
+    #validate the required enviornments 
     required_vars=[
         "AZURE_OPENAI_ENDPOINT",
         "AZURE_OPENAI_API_VERSION",

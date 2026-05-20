@@ -3,6 +3,8 @@ import json
 import logging
 from typing import Dict,Any,List
 
+from pkg_resources import run_script
+
 from azure.identity import DefaultAzureCredential
 import requests
 
@@ -117,7 +119,7 @@ class VideoIndexerService:
         tarnscript_lines=[]
         for v in vi_json.get("videos",[]):
             for insights in v.get("insights",{}).get("transcript",[]):
-                tarnscript_lines.append(transcript.get("text"))
+                tarnscript_lines.append(run_script.get("text"))
 
         ocr_lines=[]
         for v in vi_json.get("videos",[]):
